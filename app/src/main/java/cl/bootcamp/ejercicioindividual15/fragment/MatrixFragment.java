@@ -6,10 +6,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import java.util.Objects;
-
-import cl.bootcamp.ejercicioindividual15.R;
+import cl.bootcamp.ejercicioindividual15.databinding.FragmentMatrixBinding;
 
 public class MatrixFragment extends Fragment {
 
@@ -26,3 +23,4 @@ public class MatrixFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/defaultFragment">
+
+    <fragment
+        android:id="@+id/defaultFragment"
+        android:name="cl.bootcamp.ejercicioindividual14.fragment.DefaultFragment"
+        android:label="Default Fragment"
+        tools:layout="@layout/fragment_default">
+        <action
+            android:id="@+id/action_defaultFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="cl.bootcamp.ejercicioindividual14.fragment.EmptyFragment"
+        android:label="Empty Fragment"
+        tools:layout="@layout/fragment_empty" />
+
+    <!-- personajes-->
+    <fragment
+        android:id="@+id/personajesFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.PersonajesFragment"
+        android:label="Personajes"
+        tools:layout="@layout/fragment_personajes">
+        <action
+            android:id="@+id/action_personajesFragment_to_avengersFragment"
+            app:destination="@id/avengersFragment" />
+        <action
+            android:id="@+id/action_personajesFragment_to_ddmFragment"
+            app:destination="@id/ddmFragment" />
+        <action
+            android:id="@+id/action_personajesFragment_to_jurassicParkFragment"
+            app:destination="@id/jurassicParkFragment" />
+        <action
+            android:id="@+id/action_personajesFragment_to_laEraDeHieloFragment"
+            app:destination="@id/laEraDeHieloFragment" />
+        <action
+            android:id="@+id/action_personajesFragment_to_matrixFragment"
+            app:destination="@id/matrixFragment" />
+        <action
+            android:id="@+id/action_personajesFragment_to_yoRobotFragment"
+            app:destination="@id/yoRobotFragment" />
+    </fragment>
+</navigation>

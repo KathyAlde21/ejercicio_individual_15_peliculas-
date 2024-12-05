@@ -1,20 +1,20 @@
 package cl.bootcamp.ejercicioindividual15.fragment;
 
 import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import cl.bootcamp.ejercicioindividual15.R;
+import cl.bootcamp.ejercicioindividual15.databinding.FragmentYoRobotBinding;
 
-public class EmptyFragment extends Fragment {
+public class YoRobotFragment extends Fragment {
 
-    private FragmentEmptyBinding binding;
+    private FragmentYoRobotBinding binding;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentEmptyBinding.inflate(inflater, container, false);
+        binding = FragmentYoRobotBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 

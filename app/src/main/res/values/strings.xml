@@ -1,5 +1,30 @@
 <resources>
     <string name="app_name">ejercicio individual 15</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sTitulo">Pelicula</string>
+    <string name="sStart">Comenzar</string>
+    <string name="sMovie">Selecciona tu Pelicula Favorita</string>
+    <string name="sEmpty">Fragmento vacío</string>
+
+    <!--    peliculas-->
+    <string name="sRobot">Yo Robot</string>
+    <string name="sMatrix">Matix</string>
+    <string name="sDdm">El Día Después de Mañana</string>
+    <string name="sJPark">Jurassic Park</string>
+    <string name="sEraHielo">La Era de Hielo</string>
+    <string name="sAvengers">Avengers End Game</string>
+
+    <!--    content description-->
+    <string name="cdRobot">Yo Robot</string>
+    <string name="cdMatrix">Matix</string>
+    <string name="cdDdm">El Día Después de Mañana</string>
+    <string name="cdJPark">Jurassic Park</string>
+    <string name="cdEraHielo">La Era de Hielo</string>
+    <string name="cdAvengers">Avengers End Game</string>
+
+    <!--    links videos -->
+    <string name="sVideo1">Video 1</string>
+    <string name="sVideo2">Video 2</string>
+    <string name="sTodo">TODO</string>
+
 </resources>
