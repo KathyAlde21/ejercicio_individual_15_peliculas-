@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/defaultFragment"
-        android:name="cl.bootcamp.ejercicioindividual14.fragment.DefaultFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.DefaultFragment"
         android:label="Default Fragment"
         tools:layout="@layout/fragment_default">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/emptyFragment"
-        android:name="cl.bootcamp.ejercicioindividual14.fragment.EmptyFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.EmptyFragment"
         android:label="Empty Fragment"
         tools:layout="@layout/fragment_empty" />
 
@@ -46,4 +46,115 @@
             android:id="@+id/action_personajesFragment_to_yoRobotFragment"
             app:destination="@id/yoRobotFragment" />
     </fragment>
+
+    <!--    peliculas una a una fragment-->
+    <!--    Avengers -->
+    <fragment
+        android:id="@+id/videoAvFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.AvengersFragment"
+        android:label="Avengers"
+        tools:layout="@layout/fragment_avengers">
+    <action
+        android:id="@+id/action_avengersFragment_to_videoFragment"
+        app:destination="@id/videoFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!--    dia despues de mañana -->
+    <fragment
+        android:id="@+id/videoDdmFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.DiaDespuesDeMananaFragment"
+        android:label="Avengers"
+        tools:layout="@layout/fragment_dia_despues_de_manana">
+    <action
+        android:id="@+id/action_DiaDespuesDeMananaFragment_to_videoFragment"
+        app:destination="@id/videoFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!--    jurassic park -->
+    <fragment
+        android:id="@+id/videoJpFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.JurassicParkFragment"
+        android:label="Jurassic Park"
+        tools:layout="@layout/fragment_avengers">
+        <action
+            android:id="@+id/action_jurassicParkFragment_to_videoFragment"
+            app:destination="@id/videoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!--    la era de hielo -->
+    <fragment
+        android:id="@+id/videoEraDeHieloFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.LaEraDeHieloFragment"
+        android:label="La Era de Hielo"
+        tools:layout="@layout/fragment_la_era_de_hielo">
+        <action
+            android:id="@+id/action_laEraDeHieloFragment_to_videoFragment"
+            app:destination="@id/videoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!--    matrix -->
+    <fragment
+        android:id="@+id/videoMatrixFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.MatrixFragment"
+        android:label="Matrix"
+        tools:layout="@layout/fragment_matrix">
+        <action
+            android:id="@+id/action_matrixFragment_to_videoFragment"
+            app:destination="@id/videoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!--    yo robot -->
+    <fragment
+        android:id="@+id/videoYoRobotFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.YoRobotFragment"
+        android:label="Yo Robot"
+        tools:layout="@layout/fragment_yo_robot">
+        <action
+            android:id="@+id/action_yoRobotFragment_to_videoFragment"
+            app:destination="@id/videoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!--    video fragment -->
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="cl.bootcamp.ejercicioindividual15.fragment.VideoFragment"
+        android:label="Video"
+        tools:layout="@layout/fragment_video">
+        <action
+            android:id="@+id/action_videoFragment_to_personajesFragment"
+            app:destination="@id/personajesFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_videoFragment_to_defaultFragment"
+            app:destination="@id/defaultFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+
 </navigation>

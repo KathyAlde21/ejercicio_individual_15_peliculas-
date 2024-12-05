@@ -45,4 +45,17 @@ public class VideoFragment extends Fragment {
 
         return view;
     }
+    ImageButton homeButton = view.findViewById(R.id.homeButton);
+    homeButton.setOnClickListener(v -> {
+        NavHostFragment.findNavController(this)
+                .navigate(R.id.action_videoFragment_to_defaultFragment);
+    });
+
+    ImageButton backButton = view.findViewById(R.id.backButton);
+    backButton.setOnClickListener(v -> {
+        NavHostFragment.findNavController(this)
+                .navigate(R.id.action_videoFragment_to_personajesFragment);
+    });
+
+
 }

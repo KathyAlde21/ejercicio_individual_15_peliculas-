@@ -26,5 +26,7 @@
     <string name="sVideo1">Video 1</string>
     <string name="sVideo2">Video 2</string>
     <string name="sTodo">TODO</string>
+    <string name="sHome">Home</string>
+    <string name="sBack">Back</string>
 
 </resources>
