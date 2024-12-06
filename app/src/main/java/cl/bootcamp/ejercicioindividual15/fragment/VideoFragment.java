@@ -7,16 +7,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageButton;
+import android.app.Dialog;
 import androidx.fragment.app.Fragment;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.navigation.fragment.NavHostFragment;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import cl.bootcamp.ejercicioindividual15.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link VideoFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class VideoFragment extends Fragment {
 
     private static final String ARG_VIDEO_URL = "video_url";
@@ -56,6 +54,5 @@ public class VideoFragment extends Fragment {
         NavHostFragment.findNavController(this)
                 .navigate(R.id.action_videoFragment_to_personajesFragment);
     });
-
 
 }
